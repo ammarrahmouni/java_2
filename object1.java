@@ -23,7 +23,7 @@ public class object1{
     {
         this.speed = s;
     }
-    // constructure function
+    // constructure functions
 
     public int get_speed()
     {
