@@ -41,3 +41,9 @@ class Dikdortgen{
         return en * boy;
     }
 }
+/**
+ * In summary, encapsulation provides the following benefits:
+ *  - Control of the way data is accessed or modified
+ *  - More flexible and easily changed code
+ *  - Ability to change one part of the code without affecting other parts
+ */

@@ -1,5 +1,17 @@
 //Polymorphism
 /**
+    * Polymorphism
+
+    * Polymorphism, which refers to the idea of "having many forms", 
+    * occurs when there is a hierarchy of classes related to each other through inheritance. 
+    * A call to a member method will cause a different implementation to be executed, 
+    * depending on the type of the object invoking the method.
+ */
+/**
+ * Briefly, polymorphism is.
+ * one method, with different implementations
+ */
+/**
  * Polymorphism:Bu kavram javada çok ve çok önemli bir kavramdır.
  * Biz bir fonk çağrıyoruz ve bu fonk içinde başka bir fonk çağrıyor 
  * lakiiiin o fonk hangi object'ten çağıracağını bilemiyor.

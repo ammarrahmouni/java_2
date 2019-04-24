@@ -1,4 +1,11 @@
 //Metod OverLoading
+/**
+ * Method Overloading
+
+ * When methods have the same name, but different parameters, it is known as method overloading.
+ * This can be very useful when you need the same method functionality for different types of parameters.
+ * An overloaded method must have a different argument list; the parameters should differ in their type, number, or both. 
+ */
 
 public class OverLoading{
 
