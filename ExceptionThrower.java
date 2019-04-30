@@ -3,7 +3,6 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-
 /**
  * Throw kelimesi demek ki bir Exception at yani biz bir methodu 
  * olştururken buna yababiliriz o methodu belli koşullarda bir 
@@ -95,7 +94,7 @@ class A{
 class MyException extends Exception{
     /**
      * ilk önce oluşturduğmuz class'i Exception class'ından extends omalıdır.
-     * Excepiton class'İ bir constructor metodu vardır o zaman bir constructor fonl olşturmalıdır.
+     * Excepiton class'İ bir constructor metodu vardır o zaman bir constructor fonk olşturmalıdır.
      */
     public MyException(String s){
         super(s);

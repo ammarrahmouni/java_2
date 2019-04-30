@@ -22,7 +22,7 @@ public class Login{
     private String operate2; 
     private int cheekA;
     private int cheekB;
-
+    
     Scanner read = new Scanner(System.in);
     Date date = new Date();
     SimpleDateFormat nowDate = new SimpleDateFormat("yyyy/MM/dd");
@@ -35,9 +35,13 @@ public class Login{
 
     public Login(){ //Constructor method
         System.out.println("Today Date is : " + nowDate.format(date));
+        sleep(100);
         System.out.println("Now Time is : " + nowTime.format(date));
+        sleep(100);
         System.out.println("---------------------------");
+        sleep(100);
         System.out.println("Welcome in the program");
+        sleep(100);
         System.out.println("---------------------------");
         sleep(500);
         username = "None";
@@ -74,21 +78,29 @@ public class Login{
         username = read.nextLine();
         System.out.println("Please Enter Your passwords: ");
         password = read.nextLine();
-        if(assertFromInfo())
+        if(assertFromInfo()){
             sleep(500);
-        else
+            System.out.println("username and password is correct.");
+            sleep(300);
+            System.out.println("Signing in...");
+            sleep(500);
+        }
+        else{
+            System.out.println("username or passwords it is not correct.");
+            System.out.println("Plesae make sure your username and passwords and try again.");
             input();
+        }
     }//input method
 
     /* This method shows user data */
     public void output(){ //output method
         if(assertFromInfo()){
-            System.out.println("username and password is correct.");
-            System.out.println("--------------------------------");
+            sleep(300);
             System.out.println("User Info:");
+            sleep(300);
             System.out.println("username is: " + username);
+            sleep(300);
             System.out.println("password is: " + password);
-            sleep(500);
         }
     }//output method
 
@@ -112,22 +124,38 @@ public class Login{
             }//if block
 
             if(assertFromInfo()){//if block
+                sleep(100);
                 System.out.println("--------------Welcome in your account------------");
+                sleep(100);
                 System.out.println("Please specify the number for the operation you wish to perform: ");
+                sleep(100);
                 System.out.println("1- Apply Age Account");
+                sleep(100);
                 System.out.println("2- Applying the calculation of imported text characters");
-                System.out.println("3- Sign out of account and exit the program");
-                System.out.println("4- Exit form program");
+                sleep(100);
+                System.out.println("3- To show your account information");
+                sleep(100);
+                System.out.println("4- Sign out of account and exit the program");
+                sleep(100);
+                System.out.println("5- Exit form program");
                 operate = read.nextInt();
                 sleep(500);
-                if(operate == 1)
+                if(operate == 1){
                     ageAccount(); //Burda Dikkat ageAccount methodu try Block'un içinde olduğu için artık o metodu içinde eğer bir exception olursa burdaki catch kısımına düzenlenir, yani ageAccount metodunda try ve catch blokları yazmayı gerek yoktur eğer ordaki hatayi aynı şekilde düzenleyacaksek.
-                else if(operate == 2)
+                }
+                else if(operate == 2){
                     charactersAccount();
-                else if(operate == 3)
+                }
+                else if(operate == 3){
+                    output();
+                    mainMenu();
+                }
+                else if(operate == 4){
                     logoutFromAccount();
-                else if(operate == 4)
+                }
+                else if(operate == 5){
                     exitFromProgram();
+                }
                 else{
                     System.out.println("Please make sure you enter correct information and try again.");  
                     loginSystem();
@@ -214,12 +242,17 @@ public class Login{
                 System.out.println("Today is your Brith day!");
             }
         }
-        sleep(1500);
+        sleep(1000);
         System.out.println("Your age by year is : " + ageYear + " Year and " + ageMounth + " mounth and " + ageDay + " day");
+        sleep(100);
         System.out.println("Stay for your birthday : " + brithDay() + " Day");
+        sleep(100);
         System.out.println("Your age by mounth is : " + ageByMounth());
+        sleep(100);
         System.out.println("Your age by day is : " + ageByDay());
+        sleep(100);
         System.out.println("Your age by hours is : " + ageByHour());
+        sleep(100);
         System.out.println("Your age by minute is : " + ageByMinute());
         mainMenu();
     }//ageAccount method
@@ -282,6 +315,7 @@ public class Login{
 
     /* This method allows the user to return to the main menu or shutdown the program */
     public void mainMenu(){ //mainMenu method
+        sleep(1000);
         System.out.println("If you want to go back to the main menu please press the return button and if you want to exit press the exit button:");
         operate2 = read.next();
         if(operate2.equals("return") || operate2.equals("Return") || operate2.equals("RETURN")){
@@ -308,8 +342,9 @@ public class Login{
 
     /* This method closes the program */
     public void exitFromProgram(){ //eixtFromProgram method
+        sleep(1000);
+        System.out.println("Thank You Mr." + username + "!");
         sleep(500);
-        System.out.println("Thank You MS " + username + "!");
         System.exit(-1);
     }//eixtFromProgram method
 

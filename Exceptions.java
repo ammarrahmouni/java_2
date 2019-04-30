@@ -19,12 +19,12 @@ import java.lang.ArithmeticException;
 
 /**
  * Exceptions:Bu kelime ne demek?
- * Exception demek istisnayi hatadır Beklememek bir hatadır şimdi java dilinde 
+ * Exception demek istisnayi hatadır. Beklememek bir hatadır şimdi java dilinde 
  * Böyle Bir şay yaşamamız için Exception olşturmuşlar yani bu istisnayi hataları
  * Düzenlemek için Hatalarıa düşmemek için Koymuşlar.Örnek alalım düşüneyelim
  * bir program yazmışız ve o program kullanıcı internet ile bğlanmısı gerekiyor
  * Kullanıcı internet ile bağlınamdan programa giriş yapmış işte bu bir Exception
- * ve onu düzenlenmek için iki Block kullanacağız birisi adı (Try) Diğeri (catch).
+ * ve onu düzenlenmek için iki Block kullanacağız birisi adı (try) ikincisi (catch).
  * Şüpheledim kodu Try kısmında Kodu koyuruz ve Eğer bu hata olursa onun çözümü
  * catch kısmına koyuruz.Şimdi program bakıyor Eğer istisna hata olması Try 
  * kısmındaki kodu çalıştırıyor catch kısmına girmeden sonra catch'tan sonra 
@@ -74,7 +74,7 @@ public class Exceptions{
         /**
          *  (InputMismatchException) bu yanlış bilgileri girmek gibi ilgilenir
          *  yani biz kullanıcıdan bir sayıyı girmesini beklereken o string tipinde
-         * bir şeyler girmiş.
+         * bir şeyler girilmiş.
          * */     
         /**
          * Return : Burda return kelimesi kullanılırsak demek ki main metodudan çık
