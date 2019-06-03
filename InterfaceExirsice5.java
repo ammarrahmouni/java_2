@@ -30,8 +30,8 @@ public class InterfaceExirsice5{
           değişkeni kullanarak Soyut1 tipinden Arayuz1 tipine çevrdi ve arayuz_1 
           değğişkende kaydetti
        */
-       Arayuz1 arayuz_1 = (Arayuz1) soyut_1; //  Arayuz1 arayuz_1 = new A(); dogru
-       Arayuz2 arayuz_2 = (Arayuz2) soyut_1; // Arayuz2 arayuz_2 = new A(); dogru
+       Arayuz1 arayuz_1 = (Arayuz1) soyut_1; //  Arayuz1 arayuz_1 = new A(); //dogru
+       Arayuz2 arayuz_2 = (Arayuz2) soyut_1; // Arayuz2 arayuz_2 = new A(); //dogru
        //Arayuz2 arayuz_2 = (Arayuz2) arayuz1; //dogru
        soyut_1.s1();
        //soyut_1.a1(); //Hata
@@ -42,6 +42,18 @@ public class InterfaceExirsice5{
        arayuz_2.a2();
        //arayuz_2.a1(); //Hata
        //arayuz_2.s1(); //Hata
+       System.out.println("-------------------------");
+       System.out.println(soyut_1 instanceof Soyut1);
+       System.out.println(soyut_1 instanceof Arayuz1);
+       System.out.println(soyut_1 instanceof Arayuz2);
+       System.out.println("-------------------------");
+       System.out.println(arayuz_1 instanceof Soyut1);
+       System.out.println(arayuz_1 instanceof Arayuz1);
+       System.out.println(arayuz_1 instanceof Arayuz2);
+       System.out.println("-------------------------");
+       System.out.println(arayuz_2 instanceof Soyut1);
+       System.out.println(arayuz_2 instanceof Arayuz1);
+       System.out.println(arayuz_2 instanceof Arayuz2);
     }
 }
 /**

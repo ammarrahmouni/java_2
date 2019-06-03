@@ -7,16 +7,21 @@ class Hesaplama3{
     }
     public void ekranaBas(int a, int b){
         int sonuc = new Toplama().toplamaYap(a ,b);
-        System.out.println("sonuc = " + a + " + " + b + "sabit1 =" + sonuc);
+        System.out.println("sonuc = " + a + " + " + b + "sabit1 = " + sonuc);
     }
 
         public class Toplama{ //static olmayan dahili sınıf
         public int toplamaYap(int a, int b){
-            //static int toplam; //Hata: static olmayan dahili sınıflar içersinde static olmayan yordamlar içerilbilir sadece
+            //static int toplam; //Hata: static olmayan dahili sınıflar içersinde static olmayan yordamlar içerilbilir sadece.
             return (a + b) + sabit1; //Dikkat
             //return (a + b) + sabit2; //dogru
             //hata vermez çünkü static olmayan yordamlar hem static hem de static olmayan değişkenler kullanabilir
         }
+        /*
+        public static void qe(){
+            Hata; static olmayan dahili sınıflar içinde static olmayan yordamlar içerebiliri
+        }
+        */
     }
         public class Cikarma{
         public int cikarmaYap(int a , int b){

@@ -62,6 +62,6 @@ class TheCounts{
         counts++;
     } 
     public static int getCounts(){
-        return TheCounts.counts;
+        return counts;
     }
 }

@@ -1,4 +1,4 @@
- interface Calisan{
+interface Calisan{
     double calisanSabiti = 0.7;
     void bolumYazdir();
     void ucretBelirle(double ucret);
@@ -37,7 +37,7 @@ class Isci implements Calisan{
         return ucret * calisanSabiti;
     }
 }
-class Yonetici implements Calisan{
+class Yonetxici implements Calisan{
     double ucret;
     public void bolumYazdir(){
         System.out.println("---------Yonetici----------");

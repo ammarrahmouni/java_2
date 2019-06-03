@@ -3,7 +3,7 @@
 class Anasinif{
     public void ekranaBas(String deger){
         System.out.println(deger);
-        //System.out.println(deger + deger); Doğru
+        //System.out.println(deger + deger); //Doğru
     }
 }
 class B{
@@ -29,6 +29,7 @@ class TuretilmisSinif extends Anasinif{
             ekranaBas(5 + "5" + 5); // Doğru
             ekranaBas("5" + "5");//Doğru
             //ekranaBas(5 + 5); //Hata
+            //ekranaBas(5); //Hata
         }
         
     }

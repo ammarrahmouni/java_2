@@ -12,6 +12,7 @@ abstract class Sporcu{
 }
 class Futbolcu extends Sporcu{
     int antraman_sayisi = 4;
+    @Override
     public void calis(){
         System.out.println("Futbolcu calis() " + antraman_sayisi);
     }

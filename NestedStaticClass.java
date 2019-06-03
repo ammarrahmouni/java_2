@@ -110,7 +110,7 @@ class Hesaplama6{
         static int toplam; //dogru
         int sonuc; //dogru
         public static int toplamaYap(int a, int b){
-            // sonuc = a + b + x; //Hata : çünkü Sonuc değişkeni static tanımlıolmadığı için
+            // sonuc = a + b + x; //Hata : çünkü Sonuc değişkeni static tanımlı olmadığı için
             /**
              * Not Önemli : Eğer bir metot static tanımlarsak kesinlikle ve kesinlikle
              * o metodun deışında bir değişken kullanacaksak o değişken static olmak zorunda

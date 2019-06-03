@@ -4,7 +4,7 @@ import java.io.*;
  * flush() metodu ile buffer içersinde bulunan verilerin dosyası yazdırılması gerekir.
  */
 public class BufferedWriters{
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws IOException{
         File f = new File("C:\\Users\\AMMAR RAHMOUNI\\Desktop\\java_2\\copy2.txt");
         FileWriter fr = new FileWriter(f,false);
         BufferedWriter br = new BufferedWriter(fr);

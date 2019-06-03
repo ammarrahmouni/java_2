@@ -63,7 +63,7 @@ class Kitap {
 }
 
 class Roman extends Kitap{
-    @Override //Bir ana sınıfın aynı yordamları olştırmak istiyorsak @override kelmesi yazmalıdır
+    @Override //Bir ana sınıfın aynı yordamları olştırmak istiyorsak @override kelmesi yazmalıdır.okumasi için daha koyladır
     public int sayfaSayisi(){
         System.out.println("Roman-sayfaSayisi() ");
         return 500;

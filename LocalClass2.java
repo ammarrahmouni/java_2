@@ -24,7 +24,7 @@ class Hesaplama{
         }//class Toplama1  */
     }//metot ekranaBas
     public void hesaplamaYap(){
-        /* static olmayan bir metotta static sınıf tanımlamaz
+        /* static olmayan bir metotta static sınıf tanımlamaz static olsa bile metotların içinde herhangi bir static yordam tanımlamayız
         static class Toplama2{
             public void test(){};
         }//class Toplama2  */

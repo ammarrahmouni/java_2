@@ -45,6 +45,7 @@ interface App2 extends App{
 }
 interface App3{
     public void temel();
+    public void asd();
 }
 interface App4{
 
@@ -75,7 +76,7 @@ class First{
         a.getData();
     }
     public void tru(App3 a){
-        a.temel();
+        a.asd();
         
     }
 
@@ -98,7 +99,7 @@ class InterfaceYeniYontem{
                 System.out.println("This is getData(); metodu from non-name class");
             }
         };
-        f.hell(a);
+        f.hell(a); 
     }
 }
 //Önemli -2-
@@ -110,16 +111,22 @@ class ParametreInterface{
             public void temel() { //override
                 System.out.println("This is temel(); metod from non_name and non-object ParametreInterface class");
             }
+            public void asd(){
+                System.out.println("asd");
+            }
         });
     }
 }
 class AnonymousObjectAndAnonymousClass{
     public static void main(String[] args){
         //Anonymous object ve Anonymous class oluşturduk
-        new App(){
-            public void getData(){
+        new App3(){
+            public void temel(){
                 System.out.println("This is Anonymous object and Anonymous class ");
             }
-        }.getData();
+            public void asd(){
+                System.out.println("asd");
+            }
+        }.temel();
     }
 }

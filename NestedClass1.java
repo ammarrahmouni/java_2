@@ -35,7 +35,7 @@ public class NestedClass1{
                 return a / b;
 
         }
-    }//class Carpma
+    }//class Bolme
 
     public static void main(String[] args){
         NestedClass1.Toplama nt = new NestedClass1().new Toplama();
@@ -56,3 +56,11 @@ public class NestedClass1{
          */
     }
 }
+/* Hata
+class asd{
+    public static void main(String[] args) {
+        NestedClass1.Bolme r = new NestedClass1().new Bolme();
+        System.out.println(r.bolmeYap(5, 5));
+    }
+}
+*/

@@ -4,7 +4,7 @@ import java.io.*;
  * karakter encoding olmaz.Byte bazlı işlemlerde okunan veriler byte tipinde bir diziye aktarılır.
  * okuma işlemleri byte bazlı olanlarda bu şekilde yapılır.Bu sınıf kuulanabilmek için ilk olarak
  * bu sınıftan bir nensne oluştururuz.Daha sonra bu nesneye,okunacak File nesnesi paramtere olarak verilir. 
- * Sonuç : Yani bu tü okuma karakterlerin okunma yerine o karakterlerin bellekteki bytelerine okur.
+ * Sonuç : Yani bu tür okuma karakterlerin okunma yerine o karakterlerin bellekteki bytelerine okur.(01001011)
  */
 /**
  * Not : Bu sınıf kullanabilmek için import java.io.FileInputStream; ifadesi ile bu sınıf import etmemiz gerekir.

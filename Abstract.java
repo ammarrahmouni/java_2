@@ -85,7 +85,6 @@ class Rect extends Shape{
     public void Draw(){ //override zorunda
         System.out.println("This is abstract metot From Rect");
     }
-    
     public static void printShape(){ //override zorunda değil
         System.out.println("This is static metot From Rect");
     }

@@ -14,17 +14,21 @@
 
 interface Animal {
     int legs = 0;
+    //int y; //Hata ilke değer atmalıyız. 
     public void eat();
     public void makeSound();
-
+    //private int top(); //Hata interfacce içindeki yordamları erişim belirleyici public 
 }
 
 class Cat implements Animal {
     public void makeSound() {
       System.out.println("Meow");
+      System.out.println(legs);
     }
     public void eat() {
+      //legs = 8; //hata çünkü interface'in içindeki değişkenler fianl ve static değişkenler yani değerleri değişmezler
       System.out.println("omnomnom");
+      System.out.println(legs);
     }
 }
 public class Interface{

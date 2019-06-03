@@ -21,11 +21,12 @@
  * this kullanılamaz. 
  */
 /**
- * Kural4: Static olan doyanım(yani metod ne dğişken) onların adı 
+ * Kural4: Static olan doyanım(yani metod ve dğişken) onların adı 
  * Class Members
  */
 /**
- * Kural 5:Eğer bir class'ın içinde bir metod static olaran tanımlanmışsak
+ * Önemli!!!
+ * Kural 5:Eğer bir class'ın içinde bir metod static olarak tanımlanmışsak
  * ve o calss'ında bir kaç tane değişken varsa o methodu sadece static olan
  * değişkenlere bir ilşki kurulabilir.Static olmayan değişkenler ordaki metod
  * ile her hangi bir ilişki kurulamaz.
@@ -34,7 +35,7 @@
  * Kural 6:Eğer bir class'ında private static bir değişkeni tanımlanmışsak
  * onu calss adı ile çağırılamaz çünkü;Bildiğimiz gibi private olanlar sadec
  * class'ın içinde erişilebilir.Eğer onun ile erişecekesek get ve set metotlar
- * ile erişilebilir lakin o metotlar da static olmalıdır. 
+ * ile erişilebilir lakin o metotlar da static olmalıdır ama zorunda değildir. 
  */
 public class Static{
     public static void exam(){
@@ -69,7 +70,7 @@ public class Static{
         //this.x = x Hata!
     }
     public static void setZ(int a){
-        Os.z = a;
+        z = a;
     }
     public static int getZ(){
         return z;

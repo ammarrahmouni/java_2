@@ -55,6 +55,9 @@ class ReadFile2{
         File f = new File("ornek.txt");
         BufferedReader bf = new BufferedReader(new FileReader(f));
         System.out.println(bf.readLine());
+
+        System.out.println("cokcalis() yordami");
+
     }
     public static void calis(){
         try{

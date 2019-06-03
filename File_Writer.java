@@ -23,7 +23,7 @@ public class File_Writer{
             String text = "My name is ammar and i am from syria";
             f1.write(text);
             //f1.write("My name is ammar and i am from syria"), //Doğru 
-            f1.close();
+            f1.close(); // Çok önemli yazmasak istediğimiz sonuç alamyız.
             //Okuma işlemi
             char[] veriler = new char[(int) f.length()];
             FileReader f2 = new FileReader(f);

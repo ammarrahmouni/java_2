@@ -35,7 +35,7 @@ public class PolymorphismOrnekBir{
  * Hangi nesnenin selamVer() yordamı(metot) çağırlacaktır?Asker nesnesi mi?yoksa Er nesnesinin mi?
  * cevap: Er nesnesin selamVer() yordamı çağırılacaktır.çünkü Asker tipindeki yerel değişken (as) Er
  * nesnesine bağlanmıştır.Eğer Er nesnesinin selamVer() yordamı olmasaydı o zaman Asker nesnesine 
- * ait olan selamVer() yordamı çağırılcaktırfakat Er sınıfının içersinde ,ana sınıfa ait olan 
+ * ait olan selamVer() yordamı çağırılcaktır fakat Er sınıfının içersinde ,ana sınıfa ait olan 
  * (Asker Sınıfı) selamVer() yordamı iptal edildiğinden (override) dolayı ,java ,Er nesnesinin
  * selamVer() yordamını çağırılacaktır.
  * Hangi nesnesin selamVer() yordamını çağırılacağı ne zaman belli olur ? Derlame anında mı(compiler-time)?

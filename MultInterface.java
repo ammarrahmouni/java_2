@@ -3,8 +3,9 @@
  * implements yaparken interface isimleri arasında virgüle koyarız.
  * artık bu implements olan class'i her interface içindeki
  * bütün metotlar override yapmak zorunda.
- * Eğer her interface aynı metot adı varsa hata vermez lakin
- * bunları override yaparken tek bir tane yapar.
+ * Eğer her interface aynı metot adı ve aynı metot tipi ve aynı paramterler varsa hata vermez lakin
+ * bunları override yaparken tek bir tane yapar.Ama eğer bunlar aynı adı lakin tipler farklı
+ * ve parmetrleri aynı o zaman hata verir.
  */
 interface A{
     public void getDataA();
@@ -13,6 +14,8 @@ interface A{
 interface B{
     public void getDataB();
     public void printDataB();
+    //public int getDataA(); //Hata
+    //public void getDataA(); //Doğrudur
 }
 class AB implements A, B{
     public void getDataA(){

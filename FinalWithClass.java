@@ -35,7 +35,6 @@ final class FinalOrnek{
     public final int X_SABIT_DEGER = 34; 
     public final static int Y_SABIT_DEGER = 36; 
     public final int A_SABIT_DEGER = (int) (Math.random() * 50);//Bu alanın degeri çalışma anında belli olacaktır.
-    //Not:Burda bir daha bakmamız gerek çok iyi anlamadım.
     final Kutu k = new Kutu();
     public static void main(String[] args){
         FinalOrnek fo = new FinalOrnek();

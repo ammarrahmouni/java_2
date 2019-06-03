@@ -41,8 +41,8 @@ public class This{
             Bu işlem sadece fonksiuonlarin class tipinde olur yani Eğer fonksiyonun tipi 
             (int, float, void, ....) hata verir.
             Bu işlem sadece fonksiyonun class tipinde ile diğer tipler ile olur.
-            (int il void, float ile int, ...... olmaz).
-            sadece(class tipi il int, class tipi il void, class tipi il float,.....)
+            (int ile void, float ile int, ...... olmaz).
+            sadece(class tipi ile int, class tipi ile void, class tipi ile float,.....)
         */
 
         y.sepetekoy().sepetekoy().sepetekoy().sepetekoy().goster(); 

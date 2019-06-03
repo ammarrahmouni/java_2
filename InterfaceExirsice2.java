@@ -6,7 +6,7 @@
  * zorundayız.
  * Not : eğre abstract class'inda interface yordamları override yapacakasak 
  * o abstract class'inda türetilecek class'lar interface'in yordamlarını 
- * override yapmayı zorunda kalmayazak.
+ * override yapmayı zorunda kalmayacak.
  */
 
 interface Hayvan{
@@ -28,7 +28,7 @@ public class InterfaceExirsice2{
         Kaplan k = new Kaplan();
         k.avlan();
         k.takipEt();
-        
+        System.out.println(k instanceof Hayvan);
     }
 }
 /**
@@ -45,6 +45,6 @@ public class InterfaceExirsice2{
   * interface ile abstract arasında fark nedir?
   * abstract bir class türetilme yapıldığ zaman türetilen calss ile abstract class 
   * mantıksal bir ilşki olsı gerekir.örnek vermek gerekirse 
-  * "mudur bir calışandır" ya da "keplan bir hayvandır" gibi .Fakat interface ile bunlar
+  * "mudur bir calışkandır" ya da "keplan bir hayvandır" gibi .Fakat interface ile bunlar
   * erişin sınıflar arasında kalıtmasal bir ilişki bulunmayabilir.
   */

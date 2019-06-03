@@ -53,6 +53,11 @@ class InterfaceExirsice1{
             c[i].calis(); //Dikkat
         }
     }
+    public static void asser(Calisan [] c){
+        for(int i = 0; i < c.length; i++){
+            System.out.println(c[i] instanceof Calisan);
+        }
+    }
     public static void main(String[] args){
         Calisan[] c = new Calisan[7];
         //c[0] = new Calisan Hata Arayüz oluşturamayız
@@ -64,9 +69,11 @@ class InterfaceExirsice1{
         c[5] = new Mudur();
         c[6] = new GenelMudur();
         mainBasl(c);
+        asser(c);
     }
 }
-/* * Bubnu aynısı soyut sınıflar (abstract class) zaten yapiliyordu 
+/* 
+   * Bubnu aynısı soyut sınıflar (abstract class) zaten yapiliyordu 
    * arayüzleri neden kullanayım ki diyebilirsiniz.Bu örnekte arayüzlerin
    * nasıl kullandığını incelenmiştir.
-  /
+*/
